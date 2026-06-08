@@ -1,0 +1,359 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #e8e6e1;
+  color: #2a2a2a;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.pagina {
+  background: #e8e6e1;
+  min-height: 100vh;
+  padding: 2rem 0;
+}
+
+.folha {
+  background: #fff;
+  max-width: 960px;
+  margin: 0 auto;
+  box-shadow: 0 2px 20px rgb(0,0,0,0.15);
+}
+
+.header {
+  background: #6b3468;
+  padding: 1.5rem 2rem;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.header-foto {
+  width: 120px;
+  height: 120px;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.info {
+  flex: 1;
+}
+
+.info h1 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 36px;
+  color: white;
+  letter-spacing: 2px;
+}
+
+.cargo {
+  font-size: 14px;
+  color: #c9b8d0;
+  margin-top: 4px;
+}
+
+.email {
+  font-size: 13px;
+  color: #a08aaa;
+  text-decoration: none;
+  margin-top: 4px;
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  text-align: right;
+}
+
+.links a{
+  font-size: 12px;
+  color: #c9b8d0;
+  text-decoration: none;
+}
+
+.links a:hover {
+  color: white;
+}
+
+.folha-corpo {
+  padding: 0 0 3rem 0;
+}
+
+.sobre {
+  padding: 2rem 2.5rem 1rem;
+  border-bottom: 1px solid #eee;
+}
+
+.sobre h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: #7b3f7a;
+  letter-spacing: 2px;
+  margin-bottom: 1rem;
+}
+
+.sobre p{
+  font-size: 14px;
+  color: #555;
+  line-height: 1.9;
+}
+
+.destaque {
+  color: #1a1a1a;
+  font-weight: 500;
+}
+
+.btn-cv {
+  display: inline-block;
+  margin-top: 1.25rem;
+  padding: 8px 20px;
+  border: 1.5px solid #1a1a1a;
+  border-radius: 6px;
+  background: transparent;
+  font-size: 13px;
+  font-family: 'DM Sans', sans-serif;
+  cursor: pointer;
+  color: #1a1a1a;
+  text-decoration: none;
+}
+
+.btn-cv:hover {
+  background: #1a1a1a;
+  color: white;
+}
+
+.mapa {
+  padding-top: 2rem;
+}
+
+.mapa h2 {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: #7b3f7a;
+  letter-spacing: 2px;
+  margin-bottom: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding: 0.5rem;
+}
+
+.timeline {
+  position: relative;
+  padding-left: 24px;
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 4px;
+  top: 8px;
+  bottom: 8px;
+  width: 2px;
+  background: #ddd;
+}
+
+.etapa-wrapper {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: -24px;
+  top: 16px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: 2px solid #7b3f7a;
+  z-index: 1;
+}
+
+.etapa-wrapper:has(.etapa.atual) .timeline-dot {
+  background: #7b3f7a;
+}
+
+.etapa {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 1.25rem;
+  border-left: 3px solid #bbb;
+  background: #fff;
+}
+
+.etapa.atual {
+  border-left: 3px solid #7b3f7a;
+  background: #7b3f7a08;
+}
+
+.etapa-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.etapa h3 {
+  font-size: 15px;
+  font-weight: 500;
+  color: #1a1a1a;
+}
+
+.indicador {
+  font-size: 11px;
+  padding:  3px 10px;
+  border-radius: 99px;
+  background: #7b3f7a26;
+  color: #7b3f7a;
+}
+
+.etapa.proximo .indicador,
+.etapa.futuro .indicador {
+  background: rgb(0,0,0,0.05);
+  color: #888;
+}
+
+.etapa-corpo {
+  border-top: 1px solid #eee;
+  padding-top: 0.75rem;
+}
+
+.etapa-desc{
+  font-size: 13px;
+  color: #555;
+  line-height: 1.7;
+}
+
+.etapa-sub {
+  font-size: 12px;
+  font-weight: 500;
+  color: #1a1a1a;
+  margin: 0.75rem 0 0.4rem;
+}
+
+.etapa-lista {
+  padding-left: 1.2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.etapa-lista li {
+  font-size: 13px;
+  color: #555;
+  line-height: 1.6;
+}
+
+.etapa-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-top: 0.4rem;
+}
+
+.tech-tag {
+  font-size: 11px;
+  padding: 3px 10px;
+  border-radius: 99px;
+  background: #1a1a1a;
+  color: #f5f4f0;
+}
+
+.etapa-header {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.seta {
+  font-size: 11px;
+  color: #aaa;
+}
+
+.skills {
+  padding-top: 2rem;
+  position: sticky;
+  top: 2rem;
+}
+
+.skills h2{
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 24px;
+  color: #7b3f7a;
+  letter-spacing: 2px;
+  margin-top: 1.5rem;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.skill-grupo-titulo{
+  font-size: 11px;
+  font-weight: 500;
+  color: #888;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin: 1rem 0 0.6rem;
+}
+
+.skills {
+  margin-bottom: 0.85rem;
+}
+
+.skill-topo {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 5px;
+}
+
+.skill-nome {
+  font-size: 13px;
+  color: #1a1a1a;
+}
+
+.skill-pct {
+  font-size: 12px;
+  color: #888;
+}
+
+.skill-barra-bg {
+  background: rgb(0,0,0,0.08);
+  border-radius: 99px;
+  height: 4px;
+}
+
+.skill-barra {
+  height: 4px;
+  border-radius: 99px;
+  background: #7b3f7a;
+  transition: width 1s ease;
+}
+
+.idiomas {
+  margin-top: 1.5rem;
+  border-top: 1px solid #ddd;
+  padding-top: 1rem;
+}
+
+.idioma-item {
+  display: flex;
+  justify-content: space-between;
+  padding: 6px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.idioma-nome {
+  font-size: 13px;
+  color: #1a1a1a;
+}
+
+.conteudo-principal {
+  padding: 0 2.5rem;
+  display: grid;
+  grid-template-columns: 1fr 280px;
+  gap: 2rem;
+  align-items: start;
+}
