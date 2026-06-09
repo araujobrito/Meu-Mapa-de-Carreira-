@@ -1,22 +1,22 @@
 import './App.css';
-import foto from './foto.png';
+import foto from './fotojv.jpg';
 import { useEffect, useState } from 'react';
-import curriculo from "./Curriculo_Iasmin_Lopes.pdf"
+import curriculo from "./Curriculo - João Victor Araujo de Brito 2026.docx"
 
 function Header() {
   return (
     <header className='header'>
       <img src={foto} alt='Minha foto' className='header-foto' />
       <div className='info'>
-        <h1>Iasmin Lopes</h1>
-        <p className='cargo'>Fullstack - React - Java - Python</p>
-        <a href="mailto:iasminmoreira09@gmail.com" className='email'>
-          iasminmoreira09@gmail.com
+        <h1>João Victor </h1>
+        <p className='cargo'> Software Develop - Web Develop</p>
+        <a href="mailto:araujodebritoj@gmail.com" className='email'>
+          araujodebritoj@gmail.com
         </a>
       </div>
       <div className='links'>
-        <a href='https://www.linkedin.com/feed/' target='_blank' rel='noreferrer'>Linkedin</a>
-        <a href='https://github.com/IasminMoreira/monitoria' target='_blank' rel='noreferrer'>Github</a>
+        <a href='https://linkedin.com/in/araujobrito' target='_blank' rel='noreferrer'>Linkedin</a>
+        <a href='https://github.com/araujobrito' target='_blank' rel='noreferrer'>Github</a>
       </div>
     </header>
   )
@@ -27,10 +27,10 @@ function SobreMim() {
   <section className='sobre'>
     <h2>Prazer em conhecer</h2>
     <p>
-      Futura Engenheira de Computação apaixonada por transformar linhas de código em soluções que impactam vidas. Atualmente curso Desenvolvimento Web Java no Instituto PROA, onde também atuo como monitora e ponto focal — porque acredito que o sucesso de um é o sucesso de todos. Tenho experiência prática com Java, React, JavaScript e CSS, base em automação industrial com Arduino e ESP32, e busco evoluir como desenvolvedora Fullstack focada em código limpo e colaboração.
+     Futuro engenheiro de Software Fullstack
     </p>
     <a href={curriculo}
-    download={'Curriculo_Iasmin_Lopes.pdf'}
+    download={'Curriculo'}
     className='btn-cv' target='_blank' rel='noreferrer'>
       Baixar meu CV
     </a>
@@ -77,7 +77,7 @@ function MapaCarreira() {
       <h2>Mapa de Carreira</h2>
       <div className='timeline'>
         <Etapa
-          titulo="Desenvolvedora Júnior"
+          titulo="Desenvolvedor Júnior"
           status="atual"
           descricao="Fase de consolidar as bases e entregar features com qualidade."
           softSkills={[
@@ -89,8 +89,8 @@ function MapaCarreira() {
           techs={['React', 'JavaScript', 'HTML/CSS', 'Git']}
           />
           <Etapa
-          titulo="Desenvolvedora Pleno"
-          status="proximo"
+          titulo="Desenvolvedor Pleno"
+          status="próximo"
           descricao="Autonomia total em features. Liderar tecnicamente e revisar código."
           softSkills={[
             'Estimar esforço e cumprir prazos',
@@ -101,7 +101,7 @@ function MapaCarreira() {
           techs={['TypeScripy', 'Next.js', 'MySQL', 'Testes']}
           />
           <Etapa
-          titulo="Desenvolvedora Sênior"
+          titulo="Desenvolvedor Sênior"
           status="futuro"
           descricao="Refência técnica do time. Definir padrões e mentorar"
           softSkills={[

@@ -5,26 +5,26 @@
 }
 
 body {
-  background: #e8e6e1;
-  color: #2a2a2a;
+  background: white;
+  color: black;
   font-family: 'DM Sans', sans-serif;
 }
 
 .pagina {
-  background: #e8e6e1;
+  background: white;
   min-height: 100vh;
   padding: 2rem 0;
 }
 
 .folha {
-  background: #fff;
+  background: white;
   max-width: 960px;
   margin: 0 auto;
   box-shadow: 0 2px 20px rgb(0,0,0,0.15);
 }
 
 .header {
-  background: #6b3468;
+  background: #030303;
   padding: 1.5rem 2rem;
   display: flex;
   align-items: center;
@@ -33,7 +33,7 @@ body {
 
 .header-foto {
   width: 120px;
-  height: 120px;
+  height: 150px;
   object-fit: cover;
   flex-shrink: 0;
 }
@@ -45,19 +45,19 @@ body {
 .info h1 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 36px;
-  color: white;
+  color: rgb(255, 253, 253);
   letter-spacing: 2px;
 }
 
 .cargo {
   font-size: 14px;
-  color: #c9b8d0;
+  color: rgb(255, 255, 255);
   margin-top: 4px;
 }
 
 .email {
   font-size: 13px;
-  color: #a08aaa;
+  color: rgb(255, 254, 254);
   text-decoration: none;
   margin-top: 4px;
   display: block;
@@ -92,7 +92,7 @@ body {
 .sobre h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 24px;
-  color: #7b3f7a;
+  color: black;
   letter-spacing: 2px;
   margin-bottom: 1rem;
 }
@@ -134,7 +134,7 @@ body {
 .mapa h2 {
   font-family: 'Bebas Neue', sans-serif;
   font-size: 24px;
-  color: #7b3f7a;
+  color: black;
   letter-spacing: 2px;
   margin-bottom: 1.5rem;
   border-bottom: 1px solid #ddd;
@@ -168,12 +168,12 @@ body {
   width: 12px;
   height: 12px;
   border-radius: 50%;
-  border: 2px solid #7b3f7a;
+  border: 2px solid black;
   z-index: 1;
 }
 
 .etapa-wrapper:has(.etapa.atual) .timeline-dot {
-  background: #7b3f7a;
+  background: black;
 }
 
 .etapa {
@@ -185,7 +185,7 @@ body {
 }
 
 .etapa.atual {
-  border-left: 3px solid #7b3f7a;
+  border-left: 3px solid black;
   background: #7b3f7a08;
 }
 
@@ -207,7 +207,7 @@ body {
   padding:  3px 10px;
   border-radius: 99px;
   background: #7b3f7a26;
-  color: #7b3f7a;
+  color: black;
 }
 
 .etapa.proximo .indicador,
@@ -283,7 +283,7 @@ body {
 .skills h2{
   font-family: 'Bebas Neue', sans-serif;
   font-size: 24px;
-  color: #7b3f7a;
+  color: black;
   letter-spacing: 2px;
   margin-top: 1.5rem;
   border-bottom: 1px solid #ddd;
@@ -328,7 +328,7 @@ body {
 .skill-barra {
   height: 4px;
   border-radius: 99px;
-  background: #7b3f7a;
+  background: black;
   transition: width 1s ease;
 }
 
