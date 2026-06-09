@@ -163,7 +163,7 @@ body {
 
 .timeline-dot {
   position: absolute;
-  left: 24px;
+  left: -24px;
   top: 16px;
   width: 12px;
   height: 12px;
@@ -177,7 +177,7 @@ body {
 }
 
 .etapa {
-  border: 1px solid #ddd;
+  border: 1px solid black;
   border-radius: 6px;
   padding: 1.25rem;
   border-left: 3px solid #bbb;
@@ -206,8 +206,8 @@ body {
   font-size: 11px;
   padding:  3px 10px;
   border-radius: 99px;
-  background: #7b3f7a26;
-  color: black;
+  background:black;
+  color: white;
 }
 
 .etapa.proximo .indicador,
