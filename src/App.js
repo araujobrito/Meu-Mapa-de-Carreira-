@@ -201,10 +201,10 @@ function Skills() {
       <div className="idiomas">
         <p className="skill-grupo-titulo">Idiomas</p>
         <div className="idioma-item">
-          <span className="idioma-nome">Português</span>
+          <span className="idioma-nome">English</span>
         </div>
         <div className="idioma-item">
-          <span className="idioma-nome">Inglês</span>
+          <span className="idioma-nome">Espanõl</span>
         </div>
       </div>
     </section>
