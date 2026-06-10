@@ -32,10 +32,12 @@ body {
 }
 
 .header-foto {
+  border-radius: 100%;
   width: 120px;
-  height: 150px;
+  height: 120px;
   object-fit: cover;
   flex-shrink: 0;
+  object-position: 0px 0.1px;
 }
 
 .info {

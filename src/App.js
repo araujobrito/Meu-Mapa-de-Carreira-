@@ -9,7 +9,7 @@ function Header() {
       <img src={foto} alt='Minha foto' className='header-foto' />
       <div className='info'>
         <h1>João Victor </h1>
-        <p className='cargo'> Software Develop - Web Develop</p>
+        <p className='cargo'> Software Developer - Web Developer - </p>
         <a href="mailto:araujodebritoj@gmail.com" className='email'>
           araujodebritoj@gmail.com
         </a>
@@ -27,7 +27,7 @@ function SobreMim() {
   <section className='sobre'>
     <h2>Prazer em conhecer</h2>
     <p>
-     Futuro engenheiro de Software Fullstack
+     Futuro Engenheiro de Software 
     </p>
     <a href={curriculo}
     download={'Curriculo'}
@@ -78,7 +78,7 @@ function MapaCarreira() {
       <div className='timeline'>
         <Etapa
           titulo="Desenvolvedor Júnior"
-          status="atual"
+          status="Primeiro objetivo"
           descricao="Fase de consolidar as bases e entregar features com qualidade."
           softSkills={[
             'Comunicação clara com o time',
