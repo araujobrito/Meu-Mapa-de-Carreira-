@@ -27,7 +27,7 @@ function SobreMim() {
   <section className='sobre'>
     <h2>Prazer em conhecer</h2>
     <p>
-     Futuro Engenheiro de Software 
+     Formado em Análise e Desenvolvimento de Sistemas e apaixonado por tecnologia e desenvolvimento de software. Como PCD Auditivo, desenvolvi resiliência, foco e capacidade de adaptação diante dos desafios. Possuo conhecimentos em PHP, C#, Python, JavaScript, React, MySQL, Git e Github adquiridos por meio de estudos e projetos acadêmicos. Futuramente quero cursar Ciência da Computação para construir uma carreira sólida como Engenheiro de Software.
     </p>
     <a href={curriculo}
     download={'Curriculo'}
@@ -77,40 +77,46 @@ function MapaCarreira() {
       <h2>Mapa de Carreira</h2>
       <div className='timeline'>
         <Etapa
-          titulo="Desenvolvedor Júnior"
-          status="Primeiro objetivo"
-          descricao="Fase de consolidar as bases e entregar features com qualidade."
+          titulo="Desenvolvedor Back-End Júnior"
+          status="Principal"
+          descricao="Fase de consolidação dos fundamentos de programação, banco de dados e desenvolvimento de APIs, aplicando boas práticas de código e colaborando em projetos para adquirir experiência profissional."
           softSkills={[
             'Comunicação clara com o time',
             'Curiosidade ativa',
             'Resiliência com feedback',
             'Organização de tarefas',
+            'Resolução de problemas',
+            'Pensamento lógico',
+            'Aprendizado contínuo'
           ]}
-          techs={['React', 'JavaScript', 'HTML/CSS', 'Git']}
+          techs={['PHP', 'C#', 'Python',  'MySQL', 'Git', 'GitHub', 'APIs REST']}
           />
           <Etapa
-          titulo="Desenvolvedor Pleno"
+          titulo="Desenvolvedor Back-End Pleno"
           status="próximo"
-          descricao="Autonomia total em features. Liderar tecnicamente e revisar código."
+          descricao="Desenvolver aplicações com autonomia, criar e manter APIs REST, realizar integrações entre sistemas, otimizar consultas em banco de dados e contribuir para decisões técnicas da equipe, garantindo qualidade, desempenho e escalabilidade das soluções."
           softSkills={[
             'Estimar esforço e cumprir prazos',
             'Dar e receber feedback',
-            'Colaborar com designers e PMs',
-            'Identificar problemas antes de virarem incidentes',
+            'Colaborar com equipes multidisciplinares',
+            'Resolver problemas complexos',
+            'Mentorar desenvolvedores juniores'
           ]}
-          techs={['TypeScripy', 'Next.js', 'MySQL', 'Testes']}
+          techs={['Java', 'Spring Boot', 'React', 'MySQL/PostgreSQL', 'APIs REST', 'Git/GitHub', 'Testes','Docker']}
           />
           <Etapa
-          titulo="Desenvolvedor Sênior"
+          titulo="Engenheiro de Software"
           status="futuro"
-          descricao="Refência técnica do time. Definir padrões e mentorar"
+          descricao="Responsável por projetar, desenvolver e evoluir sistemas de software escaláveis, seguros e eficientes. Atua na definição de arquiteturas, boas práticas de desenvolvimento, integração entre sistemas e tomada de decisões técnicas estratégicas para garantir a qualidade e a sustentabilidade das aplicações."
           softSkills={[
-            'Mentoria de pessoas',
-            'Visão de produto',
-            'Comunicar para não devs',
             'Liderança técnica',
+            'Comunicação com equipes e stakeholders',
+            'Tomada de decisões',
+            'Liderança técnica',
+            'Resolução de problemas complexos',
+
           ]}
-          techs={['Docker', 'AWS', 'System Design', 'CI/CD']}
+          techs={['Arquitetura de Software', 'Design Patterns', 'Cloud (AWS/Azure)', 'Microserviços', 'Docker', 'Kubernetes', 'Segurança de Aplicações']}
           />
       </div>
     </section>
@@ -139,7 +145,6 @@ function Skills() {
     async function buscarLinguagens() {
       try {
         const resposta = await fetch(
-          'https://api.github.com/users/IasminMoreira/repos',
         );
         const repos = await resposta.json();
 
